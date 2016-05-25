@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Search Contacts</title>
+    <title>Register</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +29,7 @@
     <![endif]-->
 </head>
 <body>
+
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top topnav" role="navigation">
         <div class="container topnav">
@@ -50,27 +51,46 @@
     </nav>
 
 
-    <!-- Header -->
+	<!-- functionality -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				
 
-<form action="search" method="get" class="form-horizontal">
+				<h3>Enter your desired username and password:</h3>
 
-			<div class="form-group">
-				<label for="search" class="col-sm-2 control-label">Search
-					contacts: </label>
-				<div class="col-sm-7">
-					<input type="text" class="form-control" id="name" name="name"
-						placeholder="Search by Name">
-				</div>
+				<br>
+
+				<form class="form-horizontal" id="register" action="register"
+					method="post">
+
+					<div class="form-group">
+						<label for="username" class="col-sm-4 control-label">Username:
+						</label>
+						<div class="col-sm-7">
+							<input type="text" class="form-control" id="username"
+								name="username" placeholder="username" required="required">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="password" class="col-sm-4 control-label">Password:</label>
+						<div class="col-sm-7">
+							<input type="password" class="form-control" id="password"
+								name="password" placeholder="password" required="required">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<div class="col-sm-offset-4 col-sm-7">
+							<button type="submit" class="btn btn-default btn-lg">Register</button>
+						</div>
+					</div>
+				</form>
 			</div>
 
-
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default btn-lg">Search contacts</button>
-				</div>
-			</div>
-		</form>
-
+		</div>
+		<!-- end row -->
 
  <!-- Footer -->
 	<footer>

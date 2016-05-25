@@ -80,7 +80,7 @@
 							<li><a href="https://github.com/Kobe929/WebImenik"
 								class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i>
 									<span class="network-name">Github</span></a></li>
-							<li><a href="#" class="btn btn-default btn-lg"> <span
+							<li><a href="register.jsp" class="btn btn-default btn-lg"> <span
 									class="network-name">Register</span></a></li>
 						</ul>
 					</div>

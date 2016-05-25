@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Search Contacts</title>
+    <title>Add Contact</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -51,28 +51,13 @@
 
 
     <!-- Header -->
-
-<form action="search" method="get" class="form-horizontal">
-
-			<div class="form-group">
-				<label for="search" class="col-sm-2 control-label">Search
-					contacts: </label>
-				<div class="col-sm-7">
-					<input type="text" class="form-control" id="name" name="name"
-						placeholder="Search by Name">
-				</div>
-			</div>
+    
+    <h3>working on it</h3>
+    
 
 
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default btn-lg">Search contacts</button>
-				</div>
-			</div>
-		</form>
-
-
- <!-- Footer -->
+ 
+ 	<!-- Footer -->
 	<footer>
 	<div class="container">
 		<div class="row">

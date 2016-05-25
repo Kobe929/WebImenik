@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Search Contacts</title>
+    <title>Add Contact</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,8 +27,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body>
+
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top topnav" role="navigation">
         <div class="container topnav">
@@ -51,28 +53,31 @@
 
 
     <!-- Header -->
-
-<form action="search" method="get" class="form-horizontal">
-
-			<div class="form-group">
-				<label for="search" class="col-sm-2 control-label">Search
-					contacts: </label>
-				<div class="col-sm-7">
-					<input type="text" class="form-control" id="name" name="name"
-						placeholder="Search by Name">
-				</div>
-			</div>
+    
+     <h1>Delete Contact</h1>
+		<p>Are you sure you want to delete ${contact.name}
+			${contact.lastname}?</p>
 
 
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default btn-lg">Search contacts</button>
-				</div>
-			</div>
+		<form class="form-horizontal" action="delete" method="post">
+
+			<input type="hidden" class="form-control" id="name" name="name"
+				value="${contact.name }" /> <input type="hidden"
+				class="form-control" id="lastname" name="lastname"
+				value="${contact.lastname}"> <input type="hidden"
+				class="form-control" id="email" name="email"
+				value="${contact.email}"> <input type="hidden"
+				class="form-control" id="phone" name="phone"
+				value="${contact.phone}"> <input type="hidden" name="id"
+				value="${contact.contactId}">
+
+					<input type="submit" class="btn btn-default btn-lg" value="Delete Contact">
+						
 		</form>
-
-
- <!-- Footer -->
+     
+     
+     
+    <!-- Footer -->
 	<footer>
 	<div class="container">
 		<div class="row">
@@ -90,5 +95,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

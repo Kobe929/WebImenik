@@ -2,14 +2,13 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta charset="utf-8">
+<head><meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Search Contacts</title>
+    <title>Search results</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -27,8 +26,10 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 </head>
 <body>
+
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top topnav" role="navigation">
         <div class="container topnav">
@@ -52,27 +53,45 @@
 
     <!-- Header -->
 
-<form action="search" method="get" class="form-horizontal">
+<div class="container">
+		<h1>Searched contact unfinished</h1>
 
-			<div class="form-group">
-				<label for="search" class="col-sm-2 control-label">Search
-					contacts: </label>
-				<div class="col-sm-7">
-					<input type="text" class="form-control" id="name" name="name"
-						placeholder="Search by Name">
-				</div>
-			</div>
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Phone</th>
+					<th>Edit</th>
+					<th>Delete</th>
+
+				</tr>
+			</thead>
+			<tbody>
+
+				<c:forEach items="${contacts}" var="contact" varStatus="counter">
+					<tr>
+						<td>${counter.count}</td>
+						<td>${contact.name}</td>
+						<td>${contact.lastname}</td>
+						<td>${contact.email}</td>
+						<td>${contact.phone}</td>
+						<td><a href="edit?id=${contact.contactId}">Edit Contact</a></td>
+						<td><a href="delete?id=${contact.contactId}">Delete
+								Contact</a></td>
+						<td></td>
+
+					</tr>
+				</c:forEach>
+
+			</tbody>
+		</table>
 
 
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default btn-lg">Search contacts</button>
-				</div>
-			</div>
-		</form>
 
-
- <!-- Footer -->
+<!-- Footer -->
 	<footer>
 	<div class="container">
 		<div class="row">

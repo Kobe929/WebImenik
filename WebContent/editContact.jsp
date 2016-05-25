@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Search Contacts</title>
+    <title>Add Contact</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +29,8 @@
     <![endif]-->
 </head>
 <body>
+
+
 <!-- Navigation -->
     <nav class="navbar navbar-default navbar-static-top topnav" role="navigation">
         <div class="container topnav">
@@ -51,28 +53,33 @@
 
 
     <!-- Header -->
+    
 
-<form action="search" method="get" class="form-horizontal">
+    <!-- Page Content -->
 
-			<div class="form-group">
-				<label for="search" class="col-sm-2 control-label">Search
-					contacts: </label>
-				<div class="col-sm-7">
-					<input type="text" class="form-control" id="name" name="name"
-						placeholder="Search by Name">
-				</div>
-			</div>
+	
+    <div class="container">
+
+		<h1>Contact edited.</h1>
+
 
 
 			<div class="form-group">
 				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default btn-lg">Search contacts</button>
+					<button type="submit" class="btn btn-default btn-lg">Home</button>
 				</div>
 			</div>
 		</form>
 
+        </div>
+        <!-- /.container -->
 
- <!-- Footer -->
+    </div>
+    <!-- /.content-section-a -->
+
+
+    
+    <!-- Footer -->
 	<footer>
 	<div class="container">
 		<div class="row">
@@ -90,5 +97,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+</body>
 </body>
 </html>
